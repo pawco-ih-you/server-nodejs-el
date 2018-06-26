@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "lib": ["es2018"],
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "sourceMap": true,
+        "strict": false,
+        "allowJs": true,
+        "forceConsistentCasingInFileNames": true,
+        "experimentalDecorators": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "removeComments": true,
+    },
+    "exclude": [
+        "./dist",
+        "./node_modules",
+    ],
+}

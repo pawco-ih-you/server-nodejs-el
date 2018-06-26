@@ -1,0 +1,23 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "es:start": "docker run -d --name elasticsearch  -p 9200:9200 -e 'http.host=0.0.0.0' -e 'transport.host=127.0.0.1' -e 'http.cors.enabled=true' -e 'http.cors.allow-origin=*' -e 'xpack.security.enabled=false' docker.elastic.co/elasticsearch/elasticsearch:6.0.0",
+    "es:clean": "docker stop elasicsearch && docker rm elasticsearch",
+    "es:restart": "npm run es:clean && npm run es:start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^1.12.1",
+    "elasticsearch": "^15.0.0",
+    "highland": "^2.13.0"
+  },
+  "devDependencies": {
+    "@types/elasticsearch": "^5.0.24"
+  }
+}

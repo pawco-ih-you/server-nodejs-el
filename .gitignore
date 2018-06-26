@@ -1,0 +1,5 @@
+.vscode
+node_modules
+dist
+package-lock.json
+planet-latest-100k_geonames.tsv
